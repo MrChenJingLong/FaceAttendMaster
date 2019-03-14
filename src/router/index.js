@@ -69,25 +69,25 @@ export const constantRouterMap = [
     component: Layout,
     redirect: '/attend/time',
     name: '我的考勤',
-    meta: { title: '我的考勤', icon: 'example' },
+    meta: { title: '我的考勤', icon: 'my_attend' },
     children: [
       {
         path: 'time',
         name: '期间考勤',
         component: () => import('@/views/attend/time/index'),
-        meta: { title: '期间考勤', icon: 'form' }
+        meta: { title: '期间考勤', icon: 'attend_time' }
       },
       {
         path: 'day',
         name: '考勤日历',
         component: () => import('@/views/attend/day/index'),
-        meta: { title: '考勤日历', icon: 'form' }
+        meta: { title: '考勤日历', icon: 'attend_day' }
       },
       {
         path: 'month',
         name: '我的月报',
         component: () => import('@/views/attend/month/index'),
-        meta: { title: '我的月报', icon: 'form' }
+        meta: { title: '我的月报', icon: 'attend_month' }
       }
     ]
   },
@@ -103,6 +103,12 @@ export const constantRouterMap = [
         name: '班次管理',
         component: () => import('@/views/attend_mgr/classes/index'),
         meta: { title: '班次管理', icon: 'form' }
+      },
+      {
+        path: 'clock',
+        name: '时段管理',
+        component: () => import('@/views/attend_mgr/clock/index'),
+        meta: { title: '时段管理', icon: 'form' }
       },
       {
         path: 'schedule',
