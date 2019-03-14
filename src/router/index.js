@@ -105,12 +105,6 @@ export const constantRouterMap = [
         meta: { title: '班次管理', icon: 'form' }
       },
       {
-        path: 'clock',
-        name: '时段管理',
-        component: () => import('@/views/attend_mgr/clock/index'),
-        meta: { title: '时段管理', icon: 'form' }
-      },
-      {
         path: 'schedule',
         name: '智能排班',
         component: () => import('@/views/attend_mgr/schedule/index'),
