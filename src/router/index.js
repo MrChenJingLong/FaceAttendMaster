@@ -117,6 +117,12 @@ export const constantRouterMap = [
         meta: { title: '周期排班', icon: 'form' }
       },
       {
+        path: 'schedule_modify',
+        name: '排班信息',
+        component: () => import('@/views/attend_mgr/schedule/scheduleModify'),
+        meta: { title: '排班信息', icon: 'form' }
+      },
+      {
         path: 'schedule_mgr',
         name: '人员排班',
         component: () => import('@/views/attend_mgr/schedule_mgr/index'),

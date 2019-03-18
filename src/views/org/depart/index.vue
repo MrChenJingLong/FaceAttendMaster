@@ -519,7 +519,6 @@ export default {
       })
     },
     getUsers() {
-      console.log(this.userQuery)
       getUsers(this.userQuery).then(response => {
         if (response.result_code === 5000) {
           this.query_users = response.content.users
@@ -602,11 +601,9 @@ export default {
     handleChange(value) {
     },
     departSelecedChange(value) {
-      console.log(value)
       if (value == null) {
         return
       }
-      console.log(value[value.length - 1])
       this.userQuery.depart_id = value[value.length - 1]
       this.getAllPostsByDepart(value[value.length - 1])
     },
